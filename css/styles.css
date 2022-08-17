@@ -16,14 +16,38 @@ body{
    
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
 .container{
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Стилизация хедера */
+
+.header{
+    border-bottom: solid 1px #ECECEC;
+}
 
 /* Стилизация логотипа */
 
@@ -113,11 +137,21 @@ body{
 
 /* Герой */
 
+.container-hero {
+    width: 696px;
+    margin: 0 auto;
+} 
+
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--secondary-background-color);
+    text-align: center;
 }
 
 .hero-title{
+    margin: 0;
+    margin-bottom: 30px;
     color: #FFFFFF;
     font-size: 44px;
     font-weight: 900;
@@ -125,7 +159,7 @@ body{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    margin: 0;
+    width: 696px
 }
 
 .hero-button{
@@ -148,7 +182,30 @@ body{
 
 /* Стилизация приимуществ */
 
+.advantages{
+    padding-bottom: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.advantage-list{
+    display: flex;
+}
+
 .advantage-title{
+    margin-bottom: 10px;
+
     color: var(--main-font-color);
     font-weight: 700;
     line-height: 1.14;
@@ -162,19 +219,36 @@ body{
     letter-spacing: 0.03em;
 }
 
-.advantage{
+.advantage-item{
     width: 270px;
+}
 
+.advantage-list .advantage-item + .advantage-item{
+    margin-left: 30px;
 }
 
 /* Чем мы занимаемся */
 
 .section-title{
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.employments{
+    display: flex;
+}
+
+.employments .employments-item + .employments-item{
+    margin-left: 30px;
+}
+
+img{
+    display: block;
 }
 
 /* Наша команда */
@@ -183,7 +257,25 @@ body{
     background-color: #F5F4FA;
 }
 
+.team-list{
+    display: flex;
+    text-align: center;
+}
+
+.team-list .team-item + .team-item{
+    margin-left: 30px;
+}
+
+.team-item{
+    background-color: var(--main-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .name{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -191,6 +283,8 @@ body{
 }
 
 .job-title{
+    margin-bottom: 30px;
+    
     color: var(--secondary-font-color);
     font-size: 16px;
     line-height: 1.19;
@@ -199,8 +293,14 @@ body{
 
 /* Стилизация футера */
 
+.address-group{
+    margin-top: 20px;
+}
+
 .footer{
     background-color: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-link{
@@ -217,6 +317,14 @@ body{
 
 .address{
     color: #FFFFFF;
+}
+
+.address-item{
+    margin-bottom: 9px;
+}
+
+.list .address-item:last-child {
+    margin-bottom: 0;
 }
 
 /* Стилизация portfolio.html */
